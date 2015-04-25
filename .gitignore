@@ -1,0 +1,27 @@
+# eclipse
+.project
+.settings
+*.class
+.classpath
+
+# Package Files #
+*.jar
+*.war
+*.ear
+/bin
+/build
+
+# gradle
+.gradle
+
+# offline dependency
+lib
+
+# idea file
+.idea
+*.iml
+*.ipr
+*.iws
+
+# tmp
+*~
