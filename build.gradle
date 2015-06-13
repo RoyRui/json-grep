@@ -1,12 +1,23 @@
-//apply from: "$rootDir/gradle/javaProject.gradle"
-apply plugin: 'java'
+buildscript {
+	repositories {
+		maven {
+			url "https://raw.github.com/khaing211/maven-repo/master/releases"
+		}
+	}
+	
+	dependencies {
+		classpath group: 'com.github.kn.gradle-integration', name: 'java-project-plugin', version: javaProjectPluginVersion
+	}
+}
+
+apply plugin: 'java-project'
 apply plugin: 'application'
 
 applicationName = 'jgrep'
 mainClassName = 'com.github.appocalypse.JsonGrep'
 
 dependencies {
-    provided group: 'javax.json', name: 'javax.json-api', version: javaxJsonVersion
+    compile group: 'javax.json', name: 'javax.json-api', version: javaxJsonVersion
 
     runtime group: 'org.glassfish', name: 'javax.json', version: glassfishJsonVersion
 }
