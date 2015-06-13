@@ -14,7 +14,7 @@ apply plugin: 'java-project'
 apply plugin: 'application'
 
 applicationName = 'jgrep'
-mainClassName = 'com.github.appocalypse.JsonGrep'
+mainClassName = 'com.github.kn.appocalypse.JsonGrep'
 
 dependencies {
     compile group: 'javax.json', name: 'javax.json-api', version: javaxJsonVersion
