@@ -18,7 +18,7 @@ applicationName = 'jgrep'
 mainClassName = 'com.github.kn.appocalypse.JsonGrep'
 
 dependencies {
-    compile group: 'javax.json', name: 'javax.json-api', version: javaxJsonVersion
+    provided group: 'javax.json', name: 'javax.json-api', version: javaxJsonVersion
 
     runtime group: 'org.glassfish', name: 'javax.json', version: glassfishJsonVersion
 }
